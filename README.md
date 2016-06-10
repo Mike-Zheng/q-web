@@ -11,7 +11,7 @@ web
 ├fonts/
 ├js/
 ├index.html
-└ican.js
+└app.js
 
 ```
 
