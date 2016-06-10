@@ -1,0 +1,108 @@
+        .modal-backdrop.in {
+            opacity: .8!important;
+        }
+        
+        .miz-head {
+            background-color: #fff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+            position: fixed;
+            right: 0px;
+            left: 0px;
+            top: 0px;
+        }
+        
+        .miz-banner {
+            .miz-logo {
+                display: inline-block;
+                font-size: 40px;
+                color: #616161;
+            }
+            .miz-name {
+                display: inline-block;
+                font-size: 20px;
+                margin-right: 50px;
+                vertical-align: text-bottom;
+            }
+            .miz-summit {
+                color: #fff!important;
+                transition: all .3s cubic-bezier(.44, .51, .75, .68);
+                vertical-align: text-bottom;
+                padding: 6px 10px;
+                &:hover {
+                    color: #999!important;
+                    background-color: #64aae7!important;
+                    border-color: #64aae7!important;
+                }
+            }
+        }
+        
+        #miz-nav {
+            a {
+                &.active {
+                    background-color: #66afef;
+                    color: #FFF;
+                }
+            }
+        }
+        
+        #reset {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #777;
+            line-height: 30px;
+            padding: 10px 15px;
+            display: block;
+            cursor: pointer;
+            box-sizing: border-box;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        #questionModal {
+            .modal-content {
+                background-color: #f1f1f1;
+                border-style: none;
+                border-radius: 6px;
+                box-shadow: 5px 5px 10px #6e6e6e;
+                .modal-header {
+                    .close {
+                        color: #000!important;
+                        opacity: 1!important;
+                        font-size: 50px!important;
+                        margin-top: -20px!important;
+                        transition: all .2s cubic-bezier(.44, .51, .75, .68);
+                        &:hover {
+                            color: #888!important;
+                        }
+                    }
+                    .modal-title {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        
+        body {
+            background-color: #343434!important;
+        }
+        
+        .miz-container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 5px;
+            box-shadow: 3px 6px 5px #858585;
+            .block {
+                border: solid 2px #777;
+                border-radius: 2px;
+                .question-pannel {
+                    padding: 10px 20px;
+                    .question {
+                        font-size: 18px
+                    }
+                    .option {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }

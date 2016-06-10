@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>問券</title>
+    <link rel="stylesheet" href="css/mizUI.css">
+    <script src="js/mizJs.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top miz-head">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="miz-banner">
+                    <div class="miz-logo"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+                    <div class="miz-name">市政滿意度調查</div>
+                    <button id="postQ" type="button" class="btn btn-primary btn-md miz-summit">
+                        送出問券
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="miz-nav" class="nav navbar-nav navbar-right">
+                    <li ><a class="active" href="#block1">交通</a></li>
+                    <li><a href="#block2">治安</a></li>
+                    <li><a href="#block3">環境</a></li>
+                    <!-- <li> <a href="javascript: void(0)" data-toggle="modal" data-target="#myModal">填寫</a></li> -->
+                    <li id="reset"> 清除重填</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container miz-container">
+        <form id="mizForm" method='POST'>
+            <div class="block-name">交通</div>
+            <div id="block1" class="block">
+                <div id="block1-question1" class="question-pannel">
+                    <div class="question">
+                        請問您對北市今日的整體交通狀況滿意度為?
+                    </div>
+                    <div class="option">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="0">差勁</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="1">不滿意</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="2">尚可</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="3">滿意</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" value="4">非常好</label>
+                    </div>
+                </div>
+            </div>
+            <div class="block-name">治安</div>
+            <div id="block2" class="block">
+            </div>
+            <div class="block-name">環境</div>
+            <div id="block3" class="block"></div>
+        </form>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="questionModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <!--  <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button> -->
+                    <h4 class="modal-title" id="myModalLabel">
+                    問券背景調查
+                </h4>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="age">年齡</label>
+                            <input type="number" class="form-control" id="formAge" placeholder="年齡" />
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <label for="sex">性別</label>
+                            </div>
+                            <label class="radio-inline">
+                                <input type="radio" name="sexRadio" value="0">男</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sexRadio" value="1">女</label>
+                        </div>
+                        <div id="somthingwrong">輸入錯誤,請輸入正確數值</div>
+                        <button id="formButton" type="button" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
