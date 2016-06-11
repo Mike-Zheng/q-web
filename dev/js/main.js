@@ -80,6 +80,7 @@ $(document).ready(function() {
         if (k == numbersOfblock3)
             postQuestion(data, 3);
         // else alert("請完成作答再送出");
+        $('#thankyou').modal();
 
     });
 

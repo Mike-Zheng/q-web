@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <title>問券</title>
     <link rel="stylesheet" href="css/mizUI.css">
     <script src="js/mizJs.js"></script>
@@ -30,7 +31,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul id="miz-nav" class="nav navbar-nav navbar-right">
-                    <li ><a class="active" href="#block1">交通</a></li>
+                    <li><a class="active" href="#block1">交通</a></li>
                     <li><a href="#block2">治安</a></li>
                     <li><a href="#block3">環境</a></li>
                     <!-- <li> <a href="javascript: void(0)" data-toggle="modal" data-target="#myModal">填寫</a></li> -->
@@ -101,6 +102,30 @@
                         <div id="somthingwrong">輸入錯誤,請輸入正確數值</div>
                         <button id="formButton" type="button" class="btn btn-default">Submit</button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="thankyou" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                    感謝您！
+                </h4>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    感謝您撥空填寫！
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
